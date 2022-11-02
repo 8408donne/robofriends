@@ -1,6 +1,6 @@
-import React, { component} from 'react';
+import React, { Component } from 'react';
 
-class ErrorBoundry extends component {
+class ErrorBoundry extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -9,10 +9,10 @@ class ErrorBoundry extends component {
     }
 
     componentDidCatch(error, info) {
-        this.setState({ hasError: true})
+        this.setState({ hasError: true })
     }
 
-    render(){
+    render() {
         if (this.state.hasError) {
             return <h1> Oooops. This is not good</h1>
         }
