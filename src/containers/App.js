@@ -35,7 +35,9 @@ onsearchChange = (event) => {
             <h1 className='f1' >RoboFriends</h1>
             <SearchBox searchChange={this.onsearchChange}/>
             <Scroll>
+              <ErrorBoundry>
               <Cardlist robots={filteredRobots} />
+              </ErrorBoundry>
             </Scroll>
         </div>
      );

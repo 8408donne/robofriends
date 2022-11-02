@@ -1,10 +1,10 @@
 import React, { component} from 'react';
 
-class ErrorBoundry extends Component {
+class ErrorBoundry extends component {
     constructor(props) {
         super(props);
         this.state = {
-            hasError: False
+            hasError: false
         }
     }
 
